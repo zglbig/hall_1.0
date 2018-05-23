@@ -1,0 +1,22 @@
+2018-05-19 10:14:14.014 ERROR org.zgl.utils.ProtostuffUtils.deserializer(ProtostuffUtils.java:63) - protostuff反序列化class org.zgl.logic.hall.siginin.dto.FirstBuyAwardDto对象是出现异常
+java.lang.RuntimeException: Reading from a byte array threw an IOException (should never happen).
+	at io.protostuff.IOUtil.mergeFrom(IOUtil.java:54)
+	at io.protostuff.ProtostuffIOUtil.mergeFrom(ProtostuffIOUtil.java:104)
+	at org.zgl.utils.ProtostuffUtils.deserializer(ProtostuffUtils.java:60)
+	at org.zgl.jetty.MyHandler.handle(MyHandler.java:31)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:760)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:678)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: io.protostuff.ProtobufException: Protocol message contained an invalid tag (zero).
+	at io.protostuff.ProtobufException.invalidTag(ProtobufException.java:106)
+	at io.protostuff.ByteArrayInput.readFieldNumber(ByteArrayInput.java:253)
+	at io.protostuff.runtime.RuntimeSchema.mergeFrom(RuntimeSchema.java:439)
+	at io.protostuff.IOUtil.mergeFrom(IOUtil.java:45)
+	... 13 more
