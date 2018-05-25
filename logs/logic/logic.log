@@ -20,3 +20,4 @@ Caused by: io.protostuff.ProtobufException: Protocol message contained an invali
 	at io.protostuff.runtime.RuntimeSchema.mergeFrom(RuntimeSchema.java:439)
 	at io.protostuff.IOUtil.mergeFrom(IOUtil.java:45)
 	... 13 more
+2018-05-25 15:09:41.613 ERROR org.zgl.LoggerTest.main(LoggerTest.java:12) - xxx

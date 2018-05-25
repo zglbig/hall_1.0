@@ -953,66 +953,71 @@
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="238" parent="230" name="PRIMARY">
+    <column id="238" parent="230" name="systemWeath">
+      <Position>7</Position>
+      <DataType>json|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="239" parent="230" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="239" parent="231" name="id">
+    <column id="240" parent="231" name="id">
       <Position>1</Position>
       <Comment>主键，自增</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="231" name="account">
+    <column id="241" parent="231" name="account">
       <Position>2</Position>
       <Comment>账号</Comment>
       <DataType>varchar(15)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="231" name="password">
+    <column id="242" parent="231" name="password">
       <Position>3</Position>
       <Comment>密码</Comment>
       <DataType>varchar(15)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="231" name="baseInfo">
+    <column id="243" parent="231" name="baseInfo">
       <Position>4</Position>
       <DataType>json|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="231" name="weath">
+    <column id="244" parent="231" name="weath">
       <Position>5</Position>
       <Comment>财富</Comment>
       <DataType>json|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="231" name="friends">
+    <column id="245" parent="231" name="friends">
       <Position>6</Position>
       <Comment>好友</Comment>
       <DataType>json|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="245" parent="231" name="signIn">
+    <column id="246" parent="231" name="signIn">
       <Position>7</Position>
       <DataType>json|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="231" name="giftBag">
+    <column id="247" parent="231" name="giftBag">
       <Position>8</Position>
       <Comment>成长礼包</Comment>
       <DataType>json|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="231" name="task">
+    <column id="248" parent="231" name="task">
       <Position>9</Position>
       <Comment>task</Comment>
       <DataType>json|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="248" parent="231" name="PRIMARY">
+    <key id="249" parent="231" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
